@@ -8,6 +8,3 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://ruby:${{ inputs.ruby-version }}'
-  entrypoint: 'sh -c'
-  args:
-    - 'ruby -v'
