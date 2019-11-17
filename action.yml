@@ -8,6 +8,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://ruby:2.6.3'
-  entrypoint: bash
+  entrypoint: ruby
   args:
-    - ruby -v
+    - -v
