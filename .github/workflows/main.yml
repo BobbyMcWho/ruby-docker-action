@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  ruby_docker_job:
+    runs-on: ubuntu-latest
+    name: Run local action
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - uses: ./
+    - name: Docker ruby action step
+      id: ruby-docker
+      uses: actions/ruby-docker-action@v1
+      with:
+        ruby-version: 'alpine'

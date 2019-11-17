@@ -1,0 +1,13 @@
+name: 'Ruby Docker'
+description: 'Execute a command in a ruby container.'
+inputs:
+  ruby-version:
+    description: 'Docker tag of target ruby version from '
+    required: true
+    default: 'alpine'
+runs:
+  using: 'docker'
+  image: 'docker://ruby:${{ inputs.ruby-version }}'
+  entrypoint: 'sh -c'
+  args:
+    - 'ruby -v'
