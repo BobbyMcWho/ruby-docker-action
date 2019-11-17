@@ -10,6 +10,6 @@ jobs:
     - uses: ./
     - name: Docker ruby action step
       id: ruby-docker
-      uses: bobbymcwho/ruby-docker-action@v1
+      uses: bobbymcwho/ruby-docker-action@master
       with:
         ruby-version: 'alpine'
