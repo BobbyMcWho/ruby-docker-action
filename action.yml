@@ -2,7 +2,7 @@ name: 'Ruby Docker'
 description: 'Execute a command in a ruby container.'
 inputs:
   ruby-version:
-    description: 'Docker tag of target ruby version from '
+    description: 'Docker tag of target ruby version from Docker Hub'
     required: true
     default: 'alpine'
 runs:
