@@ -8,6 +8,5 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://ruby:alpine'
-  entrypoint: 'sh -c'
   args:
     - ruby -v
